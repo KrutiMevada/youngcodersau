@@ -115,12 +115,29 @@ http://www.tooplate.com/view/2089-meteor
             </nav> 
         </div> <!-- .cd-slider-nav -->
     </section> <!-- .cd-hero -->
-
+       
     <div id="fun-facts">
         <div class="container">
-            <div class="row">  
-                <object width="100%" height="400" data="img/Innovation_postcard.PDF"></object>
-            </div>
+            <div><div id="eventbrite-widget-container-56066483361"></div>
+
+            <script src="https://www.eventbrite.com.au/static/widgets/eb_widgets.js"></script>
+            
+            <script type="text/javascript">
+                var exampleCallback = function() {
+                    console.log('Order complete!');
+                };
+            
+                window.EBWidgets.createWidget({
+                    // Required
+                    widgetType: 'checkout',
+                    eventId: '56066483361',
+                    iframeContainerId: 'eventbrite-widget-container-56066483361',
+            
+                    // Optional
+                    iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                    onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+                });
+            </script></div>
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="fact-item">
@@ -535,7 +552,6 @@ http://www.tooplate.com/view/2089-meteor
             </div>
         </div>
     </footer>
-
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
