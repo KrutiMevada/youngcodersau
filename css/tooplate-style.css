@@ -523,7 +523,12 @@ ul.cd-hero-slider {
 	transition: all 0.5s;
 }
 
+/* EVENTS */
 
+#fun-facts {
+	padding: 100px 0px;
+	background-color: #fff;
+}
 
 /* FUN FACTS */
 
